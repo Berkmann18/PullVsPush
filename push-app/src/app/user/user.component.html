@@ -1,0 +1,11 @@
+<h2>Select reactive user</h2>
+
+<select [formControl]="userControl">
+  <option *ngFor="let userId of userIds" [value]="userId">
+    User ({{ userId }})
+  </option>
+</select>
+
+<pre *ngIf="user$ | async as user">
+  {{ user | json }}
+</pre>

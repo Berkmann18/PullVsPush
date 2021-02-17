@@ -1,0 +1,11 @@
+<h2>Select user</h2>
+
+<select [formControl]="userControl">
+  <option *ngFor="let userId of userIds" [value]="userId">
+    User ({{ userId }})
+  </option>
+</select>
+
+<pre *ngIf="user">
+  {{ user | json }}
+</pre>
