@@ -1,0 +1,5 @@
+<h2>Reactive user</h2>
+
+<pre *ngIf="user$ | async as user">
+  {{ user | json }}
+</pre>
