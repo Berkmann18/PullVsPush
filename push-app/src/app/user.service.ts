@@ -27,7 +27,3 @@ export class UserService {
     return this.http.get<User>(`${baseUrl}/${id}`);
   }
 }
-
-/*
-"However, there is a room for improvement, since you can get rid of the explicit subscription within the loadUser method in favour of streams composition."
-*/
